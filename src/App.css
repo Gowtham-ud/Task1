@@ -1,0 +1,115 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background: #0059c9;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.price-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.msrp {
+  font-size: 14px;
+  color: #c00;
+  text-decoration: line-through;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: none;
+  background: #0070f3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  background: #b0c6e0;
+  cursor: not-allowed;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+}
+
